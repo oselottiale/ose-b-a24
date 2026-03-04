@@ -18,6 +18,16 @@
       z-index: 9999;
     }
 
+    .link-card {
+      background: rgba(255, 255, 255, 0.05); /* Very faint white */
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(0, 207, 238, 0.3); /* Miku Cyan border */
+      border-radius: 20px;
+      padding: 2rem;
+      width: 90%;
+      max-width: 400px;
+    }
+
     .hexagon, .ring {
       position: absolute;
       top: 50%;
@@ -25,6 +35,19 @@
       transform: translate(-50%, -50%); 
       margin: 0;
       padding: 0;
+  }
+  .link-button {
+    background: transparent;
+    border: 1px solid #00CFEE;
+    color: white;
+    transition: all 0.3s ease;
+  }
+  
+  .link-button:hover {
+    background: #00CFEE;
+    box-shadow: 0 0 20px rgba(0, 207, 238, 0.6);
+    color: #000; /* Text turns black when background glows */
+    transform: translateY(-2px);
   }
   </style>
 </head>
@@ -36,6 +59,10 @@
       <svg class="ring" viewBox="0 0 50 50">
           <circle cx="25" cy="25" r="22"></circle>
       </svg>
+  </div>
+  <div class="link-card">
+    <h1>oseale links</h1>
+    <button class="link-button"></button>
   </div>
 </body>
 </html>
